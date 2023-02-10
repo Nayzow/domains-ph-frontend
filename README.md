@@ -63,11 +63,11 @@ Les routes de l'application sont définies dans le fichier app-routing.module.ts
 ```
 
 ```
-/dns : voir la liste des domaines potentiellement frauduleux à partir d'un nom de domaine.
+/domains : voir la liste des domaines potentiellement frauduleux à partir d'un nom de domaine.
 ```
 
 ```
-/dns/:domain : voir les données à un nom de domaine.
+/domains/:domain : voir les données à un nom de domaine.
 ```
 
 ```

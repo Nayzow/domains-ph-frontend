@@ -6,8 +6,8 @@ import { HomeComponent } from "./views/home/home.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'domain', component: DomainsComponent },
-  { path: 'domain/:domain', component: DomainComponent },
+  { path: 'domains', component: DomainsComponent },
+  { path: 'domains/:domain', component: DomainComponent },
   { path: 'map', component: DomainComponent },
   { path: '**', component: HomeComponent },
 ];
