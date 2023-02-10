@@ -11,7 +11,7 @@ L'application web est réalisée avec Angular et le langage TypeScript. Elle com
 Les routes de l'application sont définies dans le fichier app-routing.module.ts. Les routes disponibles sont :
 
 ```
-/ : voir toutes les technologies sur lesquels des articles ont étés écrits.
+/ : renvoie au menu principal (home).
 ```
 
 ```
