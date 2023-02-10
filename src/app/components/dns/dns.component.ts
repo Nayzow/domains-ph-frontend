@@ -1,0 +1,10 @@
+import {Component} from '@angular/core';
+
+@Component({
+  selector: 'app-dns',
+  templateUrl: './dns.component.html',
+  styleUrls: ['./dns.component.css']
+})
+export class DnsComponent {
+
+}

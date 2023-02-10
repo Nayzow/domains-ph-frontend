@@ -1,27 +1,71 @@
-# DNSServiceFrontend
+# Endpoint.sh Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.5.
+Frontend de l'API DNS-Services-API disponible sur mon github : https://github.com/Nayzow/DNS-Services-API
+L'application web est réalisée avec Angular et le langage TypeScript. Elle comporte plusieurs pages affichant des listes de noms de domaines frauduleux et permet également de les cartographier.
 
-## Development server
+## Screenshots
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Routes de l'application
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Les routes de l'application sont définies dans le fichier app-routing.module.ts. Les routes disponibles sont :
 
-## Build
+```
+/ : voir toutes les technologies sur lesquels des articles ont étés écrits.
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+/dns : voir la liste des domaines potentiellement frauduleux à partir d'un nom de domaine.
+```
 
-## Running unit tests
+```
+/map : voir la cartographie des domaines potentiellement frauduleux à partir d'un nom de domaine.
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Installation classique
 
-## Running end-to-end tests
+Assurez-vous d'avoir Node.js et npm installés sur votre ordinateur. Vous pouvez vérifier leur installation en ouvrant une invite de commande et en tapant node -v et npm -v.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Clonez le dépôt du projet en utilisant la commande
 
-## Further help
+```bash
+git clone https://github.com/Nayzow/DNS-Services-API
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+2. À la racine du projet, installez les dépendances en utilisant la commande
+
+```bash
+npm install
+```
+
+3. Démarrez l'application en utilisant la commande
+
+```bash
+npm start
+```
+
+L'application devrait maintenant être accessible à l'adresse http://localhost:4200/
+
+## Installation avec Docker
+
+Assurez-vous d'avoir Docker installé sur votre ordinateur.
+
+1. Clonez le dépôt du projet en utilisant la commande
+
+```bash
+git clone https://github.com/Nayzow/DNS-Services-API
+```
+
+2. À la racine du projet, Construisez l'image Docker à partir du fichier Dockerfile en utilisant la commande
+
+```bash
+docker build -t dns-services-api .
+```
+
+3. Exécutez le conteneur en utilisant la commande
+
+```bash
+docker run -p 4200:4200 dns-services-api
+```
+
+L'application devrait maintenant être accessible à l'adresse http://localhost:4200/
