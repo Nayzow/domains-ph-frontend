@@ -6,22 +6,6 @@ L'application web est réalisée avec Angular et le langage TypeScript. Elle com
 ## Screenshots
 
 
-## Routes de l'application
-
-Les routes de l'application sont définies dans le fichier app-routing.module.ts. Les routes disponibles sont :
-
-```
-/ : renvoie au menu principal (home).
-```
-
-```
-/dns : voir la liste des domaines potentiellement frauduleux à partir d'un nom de domaine.
-```
-
-```
-/map : voir la cartographie des domaines potentiellement frauduleux à partir d'un nom de domaine.
-```
-
 ## Installation classique
 
 Assurez-vous d'avoir Node.js et npm installés sur votre ordinateur. Vous pouvez vérifier leur installation en ouvrant une invite de commande et en tapant node -v et npm -v.
@@ -59,13 +43,33 @@ git clone https://github.com/Nayzow/DNS-Services-API
 2. À la racine du projet, Construisez l'image Docker à partir du fichier Dockerfile en utilisant la commande
 
 ```bash
-docker build -t dns-services-api .
+docker build -t domain-services-frontend .
 ```
 
 3. Exécutez le conteneur en utilisant la commande
 
 ```bash
-docker run -p 4200:4200 dns-services-api
+docker run --name domain-services-frontend -p 80:80 -d domain-services-frontend
 ```
 
-L'application devrait maintenant être accessible à l'adresse http://localhost:4200/
+L'application devrait maintenant être accessible à l'adresse http://localhost:80/ à l'aide d'un serveur nginx.
+
+## Routes de l'application
+
+Les routes de l'application sont définies dans le fichier app-routing.module.ts. Les routes disponibles sont :
+
+```
+/ : renvoie au menu principal (home).
+```
+
+```
+/dns : voir la liste des domaines potentiellement frauduleux à partir d'un nom de domaine.
+```
+
+```
+/dns/:domain : voir les données à un nom de domaine.
+```
+
+```
+/map : voir la cartographie des domaines potentiellement frauduleux à partir d'un nom de domaine.
+```
