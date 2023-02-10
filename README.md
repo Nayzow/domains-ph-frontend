@@ -1,4 +1,4 @@
-# Endpoint.sh Frontend
+# DNS-Services.sh Frontend
 
 Frontend de l'API DNS-Services-API disponible sur mon github : https://github.com/Nayzow/DNS-Services-API
 L'application web est réalisée avec Angular et le langage TypeScript. Elle comporte plusieurs pages affichant des listes de noms de domaines frauduleux et permet également de les cartographier.
