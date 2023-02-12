@@ -5,54 +5,41 @@ body {
   color: #F2F3F4;
 }
 
-/* Headings */
 h1 {
-  margin: 20px;
+  margin: 20px 20px 20px 50px;
   text-shadow: 1px 1px #F2F3F4;
   font-size: 4rem;
   font-weight: bold;
 }
 
 h2 {
-  margin-top: 2%;
-  font-size: 2.5rem;
+  font-size: 1.50rem;
   font-weight: bold;
-  margin-left: 2%;
+  margin: 25px 25px 25px 50px;
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 1.15rem;
   font-weight: bold;
-  margin: 25px 25px 25px;
+  margin: 25px;
 }
 
 h4 {
-  margin: 30px;
+  display: flex;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.50rem;
 }
 
-/* Paragraphs */
 p {
-  font-size: 1.25rem;
-  margin-right: 25%;
-  margin-left: 4%;
-  margin-top: 1%;
-}
-
-/* Lists */
-ul {
-  font-size: 1.25rem;
-  list-style-type: square;
-  margin-right: 25%;
-  margin-left: 4%;
-  margin-top: 1%;
+  margin-top: 10px;
+  margin-left: 30px;
 }
 
 li {
-  margin-top: 3%;
-}
-
-a {
-  color: #cc3277;
+  font-size: 1.10rem;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .logo {
@@ -66,3 +53,9 @@ a {
   transform: rotateZ(-17deg) scale(1.05);
 }
 
+@media (max-width: 1100px) {
+  h1 {
+    display: flex;
+    text-align: center;
+  }
+}

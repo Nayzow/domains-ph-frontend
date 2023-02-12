@@ -21,11 +21,9 @@ import {animate, query, stagger, style, transition, trigger} from "@angular/anim
 export class DomainsComponent {
   @Input() domains: Domain[] = [];
 
-  constructor(private domainsService: DomainsService) {
-  }
+  constructor(private domainsService: DomainsService) { }
 
   submit(term: any) {
-    console.log(term);
     this.domainsService.findPhishingSitesByDomain(term).subscribe(domains => this.domains = domains);
   }
 }

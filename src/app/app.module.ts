@@ -7,7 +7,7 @@ import {NavbarComponent} from "./components/navbar/navbar.component";
 import {FooterComponent} from "./components/footer/footer.component";
 import {DomainComponent} from "./views/domain/domain.component";
 import {DomainsComponent} from "./views/domains/domains.component";
-import {MapComponent} from "./views/map/map.component";
+import {MapComponent} from "./components/map/map.component";
 import {SearchbarComponent} from "./components/searchbar/searchbar.component";
 import {HomeComponent} from "./views/home/home.component";
 // import { LeafletModule } from '@asymmetrik/ngx-leaflet';

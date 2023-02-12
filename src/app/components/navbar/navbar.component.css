@@ -17,22 +17,3 @@
   font-weight: bold;
   margin: 1%;
 }
-
-:host .nav-title:hover {
-
-}
-
-@media (max-width: 700px) {
-  .nav-title {
-    width: 75%;
-  }
-
-  .logo {
-
-  }
-
-  .nav-object {
-    margin-right: 10px;
-    width: 25%;
-  }
-}

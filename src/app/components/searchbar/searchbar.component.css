@@ -1,16 +1,32 @@
 input[type="text"] {
-  margin-left: 20px;
-  margin-right: 7px;
+  margin-bottom: 26px;
+  margin-left: 50px;
+  margin-right: 10px;
   padding: 0.5em;
   font-size: 1em;
   width: 80%;
 }
 
 button {
+  align-content: center;
   padding: 0.5em 1em;
   font-size: 1em;
 }
 
 .logo {
 
+}
+
+@media (max-width: 900px) {
+  button {
+    margin-left: 60px;
+    margin-bottom: 30px;
+    width: 75%;
+  }
+}
+
+@media (max-width: 430px) {
+  button {
+    width: 70%;
+  }
 }

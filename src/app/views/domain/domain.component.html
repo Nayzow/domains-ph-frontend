@@ -1,28 +1,45 @@
 <h1>{{domainName}}</h1>
-<div class="location">
-  <h2>Localisation :</h2>
-  <h4>IP : {{domain?.query}}</h4>
-  <h4>Continent : {{domain?.continent}}</h4>
-  <h4>Pays : {{domain?.country}}</h4>
-  <h4>Region : {{domain?.regionName}}</h4>
-  <h4>Ville : {{domain?.city}}</h4>
-  <h4>Code postal : {{domain?.zip}}</h4>
-  <h4>Latitude : {{domain?.lat}}</h4>
-  <h4>Longitude : {{domain?.lon}}</h4>
-  <h4>Timezone : {{domain?.timezone}}</h4>
-  <h4>Devise : {{domain?.currency}}</h4>
-</div>
+<div class="data-container">
+  <div class="container">
+    <h3>Localisation :</h3>
+    <app-map  [latitude]="domain?.lat" [longitude]="domain?.lon"></app-map>
+  </div>
 
-<div class="organisation">
-  <h2>Fournisseur :</h2>
-  <h4>ISP : {{domain?.isp}}</h4>
-  <h4>Organisation : {{domain?.org}}</h4>
-</div>
+  <div class="container">
+    <h3>Informations :</h3>
+    <ul>
+      <li>IP : {{domain?.query}}</li>
+      <li>Continent : {{domain?.continent}}</li>
+      <li>Pays : {{domain?.country}}</li>
+      <li>Region : {{domain?.regionName}}</li>
+      <li>Ville : {{domain?.city}}</li>
+      <li>Code postal : {{domain?.zip}}</li>
+    </ul>
+  </div>
 
-<div class="connection">
-  <h2>Connection :</h2>
-  <h4>Reverse DNS :{{domain?.reverse}}</h4>
-  <h4>Connection mobile (cellulaire) : {{domain?.mobile ? 'Oui' : 'Non'}}</h4>
-  <h4>Proxy, VPN ou Tor exit address : {{domain?.proxy ? 'Oui' : 'Non'}}</h4>
-  <h4>Hosting ou data center : {{domain?.hosting ? 'Oui' : 'Non'}}</h4>
+  <div class="container">
+    <h3>Connection :</h3>
+    <ul>
+      <li>Reverse DNS :{{domain?.reverse}}</li>
+      <li>Connection mobile (cellulaire) : {{domain?.mobile ? 'Oui' : 'Non'}}</li>
+      <li>Proxy, VPN ou Tor exit address : {{domain?.proxy ? 'Oui' : 'Non'}}</li>
+      <li>Hosting ou data center : {{domain?.hosting ? 'Oui' : 'Non'}}</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <h3>Fournisseur :</h3>
+    <ul>
+      <li>ISP : {{domain?.isp}}</li>
+      <li>Organisation : {{domain?.org}}</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <h3>Autre :</h3>
+    <ul>
+      <li>Timezone : {{domain?.timezone}}</li>
+      <li>Devise : {{domain?.currency}}</li>
+    </ul>
+  </div>
 </div>

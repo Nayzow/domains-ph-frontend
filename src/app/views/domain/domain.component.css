@@ -1,0 +1,19 @@
+.data-container {
+  width: 100%;
+  margin-left: 30px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 1100px) {
+   .data-container{
+     flex-direction: column;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 25px;
+  }
+}

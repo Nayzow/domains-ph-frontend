@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import {Observable} from "rxjs";
 import {Domain} from "../models/Domain";
 import {DomainDetails} from "../models/DomainDetails";
+import * as http from "http";
 
 
 @Injectable({
