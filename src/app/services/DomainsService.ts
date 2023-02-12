@@ -13,7 +13,7 @@ export class DomainsService {
   constructor(private http: HttpClient) {}
 
   findPhishingSitesByDomain(domain: string | null = null): Observable<Domain[]> {
-    let url = 'http://localhost:8000/phishing/';
+    let url = 'http://localhost:8888/phishing/';
     if(domain) {
       url += encodeURI(domain);
     }
@@ -21,7 +21,7 @@ export class DomainsService {
   }
 
   findLocationByDomain(domain: string | null = null): Observable<DomainDetails> {
-    let url = 'http://localhost:8000/location/';
+    let url = 'http://localhost:8888/location/';
     if (domain) {
       url += encodeURI(domain);
     }
@@ -29,7 +29,7 @@ export class DomainsService {
   }
 
   findIpByDomain(domain: string | null = null): Observable<Domain> {
-    let url = 'http://localhost:8000/ip/';
+    let url = 'http://localhost:8888/ip/';
     if (domain) {
       url += encodeURI(domain);
     }
@@ -37,7 +37,7 @@ export class DomainsService {
   }
 
   findIfDomainIsAvailable(domain: string | null = null): Observable<Domain> {
-    let url = 'http://localhost:8000/available/';
+    let url = 'http://localhost:8888/available/';
     if (domain) {
       url += encodeURI(domain);
     }
