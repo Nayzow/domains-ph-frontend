@@ -1,0 +1,28 @@
+<h1>{{domainName}}</h1>
+<div class="location">
+  <h2>Localisation :</h2>
+  <h4>IP : {{domain?.query}}</h4>
+  <h4>Continent : {{domain?.continent}}</h4>
+  <h4>Pays : {{domain?.country}}</h4>
+  <h4>Region : {{domain?.regionName}}</h4>
+  <h4>Ville : {{domain?.city}}</h4>
+  <h4>Code postal : {{domain?.zip}}</h4>
+  <h4>Latitude : {{domain?.lat}}</h4>
+  <h4>Longitude : {{domain?.lon}}</h4>
+  <h4>Timezone : {{domain?.timezone}}</h4>
+  <h4>Devise : {{domain?.currency}}</h4>
+</div>
+
+<div class="organisation">
+  <h2>Fournisseur :</h2>
+  <h4>ISP : {{domain?.isp}}</h4>
+  <h4>Organisation : {{domain?.org}}</h4>
+</div>
+
+<div class="connection">
+  <h2>Connection :</h2>
+  <h4>Reverse DNS :{{domain?.reverse}}</h4>
+  <h4>Connection mobile (cellulaire) : {{domain?.mobile ? 'Oui' : 'Non'}}</h4>
+  <h4>Proxy, VPN ou Tor exit address : {{domain?.proxy ? 'Oui' : 'Non'}}</h4>
+  <h4>Hosting ou data center : {{domain?.hosting ? 'Oui' : 'Non'}}</h4>
+</div>

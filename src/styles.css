@@ -7,6 +7,7 @@ body {
 
 /* Headings */
 h1 {
+  margin: 20px;
   text-shadow: 1px 1px #F2F3F4;
   font-size: 4rem;
   font-weight: bold;
@@ -23,6 +24,10 @@ h3 {
   font-size: 1.75rem;
   font-weight: bold;
   margin: 25px 25px 25px;
+}
+
+h4 {
+  margin: 30px;
 }
 
 /* Paragraphs */
@@ -60,3 +65,4 @@ a {
 .logo:hover {
   transform: rotateZ(-17deg) scale(1.05);
 }
+

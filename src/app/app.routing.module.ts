@@ -3,12 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { DomainComponent } from "./views/domain/domain.component";
 import { DomainsComponent } from "./views/domains/domains.component";
 import { HomeComponent } from "./views/home/home.component";
+import {MapComponent} from "./views/map/map.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'domains', component: DomainsComponent },
   { path: 'domains/:domain', component: DomainComponent },
-  { path: 'map', component: DomainComponent },
+  { path: 'map', component: MapComponent },
   { path: '**', component: HomeComponent },
 ];
 

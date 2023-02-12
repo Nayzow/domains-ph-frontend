@@ -1,0 +1,16 @@
+input[type="text"] {
+  margin-left: 20px;
+  margin-right: 7px;
+  padding: 0.5em;
+  font-size: 1em;
+  width: 80%;
+}
+
+button {
+  padding: 0.5em 1em;
+  font-size: 1em;
+}
+
+.logo {
+
+}

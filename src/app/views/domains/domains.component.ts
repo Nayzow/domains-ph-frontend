@@ -1,21 +1,31 @@
-import {Component} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-import {Observable} from "rxjs";
+import {Component, Input} from '@angular/core';
 import {Domain} from "../../models/Domain";
+import {DomainsService} from "../../services/DomainsService";
+import {animate, query, stagger, style, transition, trigger} from "@angular/animations";
 
 @Component({
   selector: 'app-domains',
   templateUrl: './domains.component.html',
-  styleUrls: ['./domains.component.css']
+  styleUrls: ['./domains.component.css'],
+  animations: [
+    trigger('domainsAnimation', [
+      transition('* => *', [ // each time the binding value changes
+        query(':enter', [
+          style({opacity: 0}),
+          stagger(220, [animate('1s', style({opacity: 1}))])
+        ], {optional: true})
+      ])
+    ])
+  ]
 })
 export class DomainsComponent {
-  constructor(private http: HttpClient) {}
+  @Input() domains: Domain[] = [];
 
-  getAll(domain: string | null = null): Observable<Domain[]> {
-    let url = 'http://20.93.152.151:8888';
-    if(domain) {
-      url += '?technologyName=' + encodeURI(domain);
-    }
-    return this.http.get<Domain[]>(url);
+  constructor(private domainsService: DomainsService) {
+  }
+
+  submit(term: any) {
+    console.log(term);
+    this.domainsService.findPhishingSitesByDomain(term).subscribe(domains => this.domains = domains);
   }
 }

@@ -5,6 +5,11 @@ L'application web est réalisée avec Angular et le langage TypeScript. Elle com
 
 ## Screenshots
 
+![img.png](src%2Fassets%2Fimages%2Fscreenshots%2Fimg.png)
+![img_1.png](src%2Fassets%2Fimages%2Fscreenshots%2Fimg_1.png)
+![img_2.png](src%2Fassets%2Fimages%2Fscreenshots%2Fimg_2.png)
+![img_3.png](src%2Fassets%2Fimages%2Fscreenshots%2Fimg_3.png)
+![img_4.png](src%2Fassets%2Fimages%2Fscreenshots%2Fimg_4.png)
 
 ## Installation classique
 
@@ -43,13 +48,13 @@ git clone https://github.com/Nayzow/DNS-Services-API
 2. À la racine du projet, Construisez l'image Docker à partir du fichier Dockerfile en utilisant la commande
 
 ```bash
-docker build -t domain-services-frontend .
+docker build -t dns-services-frontend .
 ```
 
 3. Exécutez le conteneur en utilisant la commande
 
 ```bash
-docker run --name domain-services-frontend -p 80:80 -d domain-services-frontend
+docker run --name dns-services-frontend -p 80:80 -d dns-services-frontend
 ```
 
 L'application devrait maintenant être accessible à l'adresse http://localhost:80/ à l'aide d'un serveur nginx.
