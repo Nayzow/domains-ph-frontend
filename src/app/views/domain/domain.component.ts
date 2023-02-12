@@ -31,7 +31,7 @@ export class DomainComponent implements OnInit {
   ngOnInit() {
     this.domainsService.findLocationByDomain(this.domainName).subscribe(domain => {
       this.domain = domain;
-      this.domain ? this.setLocation(this.domain.lat, this.domain.lon) : this.setLocation(0, 0);
+      // this.domain ? this.setLocation(this.domain.lat, this.domain.lon) : this.setLocation(0, 0);
     });
     // this.domainsService.findIfDomainIsAvailable(this.domainName).subscribe(available => this.available = available)
   }

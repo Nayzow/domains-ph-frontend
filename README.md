@@ -9,7 +9,6 @@ L'application web est réalisée avec Angular et le langage TypeScript. Elle com
 ![img_1.png](src%2Fassets%2Fimages%2Fscreenshots%2Fimg_1.png)
 ![img_2.png](src%2Fassets%2Fimages%2Fscreenshots%2Fimg_2.png)
 ![img_3.png](src%2Fassets%2Fimages%2Fscreenshots%2Fimg_3.png)
-![img_4.png](src%2Fassets%2Fimages%2Fscreenshots%2Fimg_4.png)
 
 ## Installation classique
 

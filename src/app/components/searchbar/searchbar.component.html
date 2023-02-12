@@ -1,2 +1,2 @@
-<input type="text" [(ngModel)]="term">
+<input type="text" [(ngModel)]="term" (keyup.enter)="submit.emit(term)">
 <button (click)="submit.emit(term)">Rechercher</button>
