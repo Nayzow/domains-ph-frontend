@@ -1,24 +1,17 @@
-# DNS-Services.sh Frontend
+# Domains.ph Frontend
 
 ## Description
 
-Frontend de l'API DNS-Services-AP
-I disponible sur mon github : https://github.com/Nayzow/DNS-Services-API
+Frontend du projet Domains.ph disponible sur mon github : https://github.com/Nayzow/DNS-Services-API
 Veillez à bien avoir installé l'API en suivant les procédures d'installation.
 L'application web est réalisée avec Angular et le langage TypeScript. Elle comporte plusieurs pages affichant des listes de noms de domaines de phishing potentiellement frauduleux et permet également de les cartographier.
-Documentation complete du projet : https://github.com/Nayzow/Domain-sh
+Documentation complete du projet : https://github.com/Nayzow/domains-ph
 
 ## Présentation
 
 ![presentation.gif](src%2Fassets%2Fimages%2Fpresentation.gif)
 
 ## Installation
-
-Clonez le dépôt du projet en utilisant la commande
-
-```bash
-git clone https://github.com/Nayzow/DNS-Services-API
-```
 
 ### Installation avec l'API pour profiter de l'affichage des données
 
@@ -36,16 +29,22 @@ L'API est désormais disponible à l'adresse http://localhost:8888
 
 ### Installation classique
 
+#### 1. Clonez le dépôt du projet en utilisant la commande
+
+```bash
+git clone https://github.com/Nayzow/DNS-Services-API
+```
+
 Assurez-vous d'avoir Node.js et npm installés sur votre ordinateur. Vous pouvez vérifier leur installation en ouvrant une invite de commande et en tapant node -v et npm -v.
 
 
-#### 1. À la racine du projet, installez les dépendances en utilisant la commande
+#### 2. À la racine du projet, installez les dépendances en utilisant la commande
 
 ```bash
 npm install
 ```
 
-#### 2. Démarrez l'application en utilisant la commande
+#### 3. Démarrez l'application en utilisant la commande
 
 ```bash
 npm start
@@ -55,15 +54,21 @@ L'application devrait maintenant être accessible à l'adresse http://localhost:
 
 ### Installation avec Docker
 
-Assurez-vous d'avoir Docker installé sur votre ordinateur.
+Assurez-vous d'avoir Docker installé sur votre ordinateur. Lien pour télécharger Docker : https://www.docker.com/products/docker-desktop/
 
-#### 1. À la racine du projet, Construisez l'image Docker à partir du fichier Dockerfile en utilisant la commande
+#### 1. Clonez le dépôt du projet en utilisant la commande
+
+```bash
+git clone https://github.com/Nayzow/DNS-Services-API
+```
+
+#### 2. À la racine du projet, Construisez l'image Docker à partir du fichier Dockerfile en utilisant la commande
 
 ```bash
 docker build -t dns-services-frontend .
 ```
 
-#### 2. Exécutez le conteneur en utilisant la commande
+#### 3. Exécutez le conteneur en utilisant la commande
 
 ```bash
 docker run --name dns-services-frontend -p 80:80 -d dns-services-frontend
