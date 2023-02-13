@@ -6,6 +6,7 @@ Frontend de l'API DNS-Services-AP
 I disponible sur mon github : https://github.com/Nayzow/DNS-Services-API
 Veillez à bien avoir installé l'API en suivant les procédures d'installation.
 L'application web est réalisée avec Angular et le langage TypeScript. Elle comporte plusieurs pages affichant des listes de noms de domaines de phishing potentiellement frauduleux et permet également de les cartographier.
+Documentation complete du projet : https://github.com/Nayzow/Domain-sh
 
 ## Présentation
 
@@ -13,11 +14,25 @@ L'application web est réalisée avec Angular et le langage TypeScript. Elle com
 
 ## Installation
 
-1. Clonez le dépôt du projet en utilisant la commande
+Clonez le dépôt du projet en utilisant la commande
 
 ```bash
 git clone https://github.com/Nayzow/DNS-Services-API
 ```
+
+### Installation avec l'API pour profiter de l'affichage des données
+
+Lien du fichier de déploiement : https://github.com/Nayzow/Domain-sh/blob/main/docker-compose.YAML
+
+Ensuite d'effectuer cette commande dans le répertoire courant du fichier "docker-compose.yaml" :
+
+```bash
+docker-compose up
+```
+
+L'application Web est désormais disponible à l'adresse http://localhost
+
+L'API est désormais disponible à l'adresse http://localhost:8888
 
 ### Installation classique
 
@@ -38,7 +53,7 @@ npm start
 
 L'application devrait maintenant être accessible à l'adresse http://localhost:4200/
 
-## Installation avec Docker
+### Installation avec Docker
 
 Assurez-vous d'avoir Docker installé sur votre ordinateur.
 
