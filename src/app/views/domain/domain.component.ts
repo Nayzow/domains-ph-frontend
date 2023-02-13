@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {DomainsService} from "../../services/DomainsService";
 import {DomainDetails} from "../../models/DomainDetails";
-import {DomSanitizer} from "@angular/platform-browser";
 import * as URL from 'url';
 
 @Component({
