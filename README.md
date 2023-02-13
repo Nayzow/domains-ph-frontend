@@ -2,7 +2,7 @@
 
 Frontend de l'API DNS-Services-API disponible sur mon github : https://github.com/Nayzow/DNS-Services-API
 Veillez à bien avoir installé l'API en suivant les procédures d'installation.
-L'application web est réalisée avec Angular et le langage TypeScript. Elle comporte plusieurs pages affichant des listes de noms de domaines frauduleux et permet également de les cartographier.
+L'application web est réalisée avec Angular et le langage TypeScript. Elle comporte plusieurs pages affichant des listes de noms de domaines de phishing potentiellement frauduleux et permet également de les cartographier.
 
 ## Screenshots
 
@@ -69,5 +69,5 @@ Les routes de l'application sont définies dans le fichier app-routing.module.ts
 ```
 
 ```
-/domains/:domain : voir les données à un nom de domaine.
+/domains/:domain : voir les données relatives à un nom de domaine.
 ```

@@ -20,7 +20,7 @@ export class DomainsService {
     return this.http.get<Domain[]>(url);
   }
 
-  findByDomainName(domain: string | null = null): Observable<DomainDetails> {
+  findDomainByDomainName(domain: string | null = null): Observable<DomainDetails> {
     let url = environment.apiUrl + '/domain/';
     if (domain) {
       url += encodeURI(domain);
