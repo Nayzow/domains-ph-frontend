@@ -2,12 +2,16 @@
   margin-left: 25px;
   width: 250px;
   height: 250px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 1250px) {
   #map {
-    margin: 35px;
+    margin: 35px auto;
     width: 85%;
     height: 300px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
   }
 }

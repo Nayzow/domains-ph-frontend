@@ -24,6 +24,6 @@ export class DomainsComponent {
   constructor(private domainsService: DomainsService) { }
 
   submit(term: any) {
-    this.domainsService.findPhishingSitesByDomain(term).subscribe(domains => this.domains = domains);
+    this.domainsService.findAllByDomainName(term).subscribe(domains => this.domains = domains);
   }
 }

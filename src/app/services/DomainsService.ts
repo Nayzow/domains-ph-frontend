@@ -12,35 +12,19 @@ export class DomainsService {
   constructor(private http: HttpClient) {
   }
 
-  findPhishingSitesByDomain(domain: string | null = null): Observable<Domain[]> {
-    let url = environment.apiUrl + '/phishing/';
+  findAllByDomainName(domain: string | null = null): Observable<Domain[]> {
+    let url = environment.apiUrl + '/domains/';
     if (domain) {
       url += encodeURI(domain);
     }
     return this.http.get<Domain[]>(url);
   }
 
-  findLocationByDomain(domain: string | null = null): Observable<DomainDetails> {
-    let url = environment.apiUrl + '/location/';
+  findByDomainName(domain: string | null = null): Observable<DomainDetails> {
+    let url = environment.apiUrl + '/domain/';
     if (domain) {
       url += encodeURI(domain);
     }
     return this.http.get<DomainDetails>(url);
-  }
-
-  findIpByDomain(domain: string | null = null): Observable<Domain> {
-    let url = environment.apiUrl + '/ip/';
-    if (domain) {
-      url += encodeURI(domain);
-    }
-    return this.http.get<Domain>(url);
-  }
-
-  findIfDomainIsAvailable(domain: string | null = null): Observable<Domain> {
-    let url = environment.apiUrl + '/available/';
-    if (domain) {
-      url += encodeURI(domain);
-    }
-    return this.http.get<Domain>(url);
   }
 }

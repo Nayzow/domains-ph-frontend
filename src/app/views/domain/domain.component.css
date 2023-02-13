@@ -6,18 +6,28 @@
   flex-direction: row;
 }
 
+h3 {
+  font-size: 1.9rem;
+  font-weight: bold;
+  text-shadow: 1px 1px #ccc;
+}
+
+li {
+  font-size: 1.4rem;
+  font-family: Arial, sans-serif;
+}
+
 @media (max-width: 1250px) {
-   .data-container{
-     flex-direction: column;
+  .data-container{
+    flex-direction: column;
   }
 
   h3 {
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 2rem;
     margin: 25px;
   }
 
   li {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
