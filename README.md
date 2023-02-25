@@ -59,7 +59,7 @@ L'application devrait maintenant être accessible à l'adresse http://localhost:
 
 ### Installation avec Docker
 
-Assurez-vous d'avoir Docker installé sur votre ordinateur. Lien pour télécharger Docker : https://www.docker.com/products/docker-desktop/
+Assurez-vous d'avoir Docker installé sur votre machine.
 
 #### 1. Clonez le dépôt du projet en utilisant la commande
 
