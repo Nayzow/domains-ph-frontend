@@ -2,10 +2,11 @@
 
 ## Description
 
-Frontend du projet Domains.ph disponible sur mon github : https://github.com/Nayzow/dns-services-api
-Veillez à bien avoir installé l'API en suivant les procédures d'installation.
-L'application web est réalisée avec Angular et le langage TypeScript. Elle comporte plusieurs pages affichant des listes de noms de domaines de phishing potentiellement frauduleux et permet également de les cartographier.
-Documentation complete du projet : https://github.com/Nayzow/domains-ph
+Frontend du projet Domains.ph. L'application web est réalisée avec Angular et le langage TypeScript. Elle comporte plusieurs pages affichant des listes de noms de domaines de phishing potentiellement frauduleux et permet également de les cartographier.
+
+- Documentation de l'API : https://github.com/Nayzow/dns-services-api
+
+- Documentation complete du projet pour installer l'application web et l'API: https://github.com/Nayzow/domains-ph
 
 ## Présentation
 
