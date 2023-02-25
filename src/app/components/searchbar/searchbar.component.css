@@ -13,10 +13,6 @@ button {
   font-size: 1em;
 }
 
-.logo {
-
-}
-
 @media (max-width: 900px) {
   button {
     margin-left: 60px;

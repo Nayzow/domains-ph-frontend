@@ -23,7 +23,7 @@ export class DomainsComponent {
 
   constructor(private domainsService: DomainsService) { }
 
-  submit(term: any) {
-    this.domainsService.findAllByDomainName(term).subscribe(domains => this.domains = domains);
+  async submit(term: any) {
+    await this.domainsService.findPhishingDomainsByDomainName(term).subscribe(domains => this.domains = domains);
   }
 }

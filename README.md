@@ -9,7 +9,7 @@ Documentation complete du projet : https://github.com/Nayzow/domains-ph
 
 ## Présentation
 
-![presentation.gif](src%2Fassets%2Fimages%2Fpresentation.gif)
+![presentation.gif](src/assets/images/presentation.gif)
 
 ## Installation
 
@@ -44,10 +44,14 @@ Assurez-vous d'avoir Node.js et npm installés sur votre ordinateur. Vous pouvez
 npm install
 ```
 
-#### 3. Démarrez l'application en utilisant la commande
+#### 3. Démarrez l'application en utilisant les commandes
 
 ```bash
-npm start
+dns-service-frontend@0.0.0 start
+```
+
+```bash
+ng serve
 ```
 
 L'application devrait maintenant être accessible à l'adresse http://localhost:4200/

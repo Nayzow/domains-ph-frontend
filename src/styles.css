@@ -27,8 +27,14 @@ h3 {
 h4 {
   display: flex;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 40px;
   font-size: 1.5rem;
+}
+
+h5 {
+  display: flex;
+  text-align: center;
+  font-size: 1rem;
 }
 
 p {

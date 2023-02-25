@@ -31,10 +31,24 @@ export class MapComponent {
 
   createView(latitude: number | undefined, longitude: number | undefined) {
     if (!latitude || !longitude) return;
+
+    const myIcon = L.icon({
+      iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
+      shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+      iconSize: [25, 41],
+      iconAnchor: [12, 41],
+      popupAnchor: [1, -34],
+      shadowSize: [41, 41]
+    });
+
+
     this.map = L.map('map').setView([latitude, longitude], 13);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: 'Domains.ph',
       maxZoom: 18
     }).addTo(this.map);
+
+    const marker = L.marker([latitude, longitude], { icon: myIcon });
+    marker.addTo(this.map);
   }
 }

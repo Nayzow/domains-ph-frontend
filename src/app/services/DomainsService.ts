@@ -12,7 +12,7 @@ export class DomainsService {
   constructor(private http: HttpClient) {
   }
 
-  findAllByDomainName(domain: string | null = null): Observable<Domain[]> {
+  findPhishingDomainsByDomainName(domain: string | null = null): Observable<Domain[]> {
     let url = environment.apiUrl + '/domains/';
     if (domain) {
       url += encodeURI(domain);
@@ -20,7 +20,7 @@ export class DomainsService {
     return this.http.get<Domain[]>(url);
   }
 
-  findDomainByDomainName(domain: string | null = null): Observable<DomainDetails> {
+  findDataByDomainName(domain: string | null = null): Observable<DomainDetails> {
     let url = environment.apiUrl + '/domain/';
     if (domain) {
       url += encodeURI(domain);
